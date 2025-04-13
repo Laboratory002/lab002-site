@@ -5,6 +5,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 export default function Lab002Template() {
   useEffect(() => {
@@ -16,7 +17,7 @@ export default function Lab002Template() {
       {/* Navbar */}
       <header className="fixed top-0 w-full bg-black/80 backdrop-blur z-50 px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="Lab002 Logo" className="w-10 h-10 object-contain" />
+          <Image src="/logo.png" alt="Lab002 Logo" width={40} height={40} className="object-contain" />
           <h1 className="text-xl font-bold tracking-widest">LAB002</h1>
         </div>
         <nav className="space-x-6 text-sm">
@@ -81,7 +82,7 @@ export default function Lab002Template() {
 
       {/* Contact Section */}
       <section id="contact" className="bg-gray-950 py-20 px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let&apos;s Connect</h2>
         <p className="text-gray-400 mb-6">Drop us a line or follow us on social media.</p>
         <a
           href="https://x.com/laboratory002"
