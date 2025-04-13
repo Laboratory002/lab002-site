@@ -54,11 +54,51 @@ export default function Lab002Template() {
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          href="#"
+          href="#about-lab002"
           className="bg-white text-black text-sm font-medium px-6 py-3 rounded-full hover:bg-zinc-200 transition"
         >
           Start Exploring
         </motion.a>
+      </section>
+
+      {/* About Lab002 Section */}
+      <section id="about-lab002" className="py-28 px-6 bg-black border-t border-white/10 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-4xl mx-auto"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">What is Lab002?</h2>
+          <p className="text-lg text-gray-400 mb-8">
+            Lab002 is a new kind of platform for builders and creators who want to launch the future. Whether you're building tools, launching a project, or connecting with a community, Lab002 provides the infrastructure, support, and exposure to help you scale from zero to everywhere.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            {[
+              {
+                title: "Modular by Default",
+                desc: "Start with just what you need. Add complexity only when you're ready."
+              },
+              {
+                title: "Made for Speed",
+                desc: "Fast deploys, minimal friction, and tools optimized for execution."
+              },
+              {
+                title: "Community-Enabled",
+                desc: "Access knowledge, feedback, and network effects from other builders."
+              }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.02 }}
+                className="bg-zinc-900 border border-white/10 p-6 rounded-xl"
+              >
+                <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
+                <p className="text-gray-400 text-sm">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </section>
 
       {/* Grid Section */}
