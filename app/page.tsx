@@ -39,9 +39,17 @@ export default function Lab002Template() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 1 }}
-          className="max-w-2xl text-lg md:text-xl text-gray-400 mb-10"
+          className="max-w-2xl text-lg md:text-xl text-gray-400 mb-4"
         >
           Redefining how creators, developers, and innovators launch, grow, and connect in the digital world.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 1 }}
+          className="max-w-xl text-base md:text-lg text-gray-500 italic mb-10"
+        >
+          "Build bold. Create fast. Scale infinitely. Lab002 is where the future gets launched."
         </motion.p>
         <motion.a
           whileHover={{ scale: 1.05 }}
@@ -102,7 +110,7 @@ export default function Lab002Template() {
           href="https://x.com/laboratory002"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-xl transition"
+          className="inline-flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-xl transition hover:bg-zinc-200"
         >
           <X className="w-5 h-5" />
           Follow us on X
