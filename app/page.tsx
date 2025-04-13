@@ -21,8 +21,6 @@ export default function Lab002Template() {
         <nav className="space-x-6 text-sm">
           <a href="#features" className="hover:text-purple-400">Features</a>
           <a href="#about" className="hover:text-purple-400">About</a>
-          <a href="#products" className="hover:text-purple-400">Products</a>
-          <a href="#how-it-works" className="hover:text-purple-400">How It Works</a>
           <a href="#contact" className="hover:text-purple-400">Contact</a>
         </nav>
       </header>
@@ -35,7 +33,7 @@ export default function Lab002Template() {
           transition={{ duration: 1 }}
           className="text-4xl md:text-6xl font-bold mb-4"
         >
-          Discover Next-Gen Commerce
+          Enter the New Creative Web
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -43,10 +41,10 @@ export default function Lab002Template() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-gray-400"
         >
-          The most innovative products, designed for the future and powered by creators.
+          Experience the future of publishing and creativity with a platform that empowers your ideas.
         </motion.p>
-        <a href="#products" className="inline-block bg-purple-600 hover:bg-purple-700 text-white text-lg px-8 py-3 rounded-xl shadow-xl">
-          Shop Products
+        <a href="#features" className="inline-block bg-purple-600 hover:bg-purple-700 text-white text-lg px-8 py-3 rounded-xl shadow-xl">
+          Get Started
         </a>
       </section>
 
@@ -54,9 +52,9 @@ export default function Lab002Template() {
       <section id="features" className="bg-gray-900 py-20 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { title: "Lightning Fast", desc: "No delays, instant loading for seamless shopping." },
-            { title: "Seamless Checkout", desc: "One-click checkout with secure payment options." },
-            { title: "Custom Curation", desc: "AI-powered suggestions tailored to your taste." },
+            { title: "Fast & Smooth", desc: "Lightning-fast interactions with zero lag." },
+            { title: "Creative Freedom", desc: "Design without limitations or boundaries." },
+            { title: "Built for the Future", desc: "Next-gen tools for next-gen creators." },
           ].map((feat, idx) => (
             <motion.div
               key={idx}
@@ -72,42 +70,12 @@ export default function Lab002Template() {
         </div>
       </section>
 
-      {/* Product Grid */}
-      <section id="products" className="bg-black py-20 px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Products</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-          {[1, 2, 3].map((num) => (
-            <div key={num} className="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-purple-600 transition">
-              <Image src={`/product-${num}.jpg`} alt={`Product ${num}`} width={600} height={400} className="w-full object-cover" />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-1">Product Name {num}</h3>
-                <p className="text-sm text-gray-400 mb-4">High-performance gear built for creators, athletes, and dreamers alike.</p>
-                <a href="#" className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-lg text-sm">
-                  Buy Now
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section id="how-it-works" className="bg-black py-20 px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">How It Works</h2>
-        <div className="max-w-5xl mx-auto space-y-8 text-left">
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-purple-400">1. Discover</h3>
-            <p className="text-gray-400">Explore a curated collection of cutting-edge products built for modern lifestyles.</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-purple-400">2. Customize</h3>
-            <p className="text-gray-400">Select styles, colors, or bundles to match your preferences.</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-purple-400">3. Checkout</h3>
-            <p className="text-gray-400">A secure and quick checkout experience lets you finalize your purchase in seconds.</p>
-          </div>
-        </div>
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">About Lab002</h2>
+        <p className="max-w-3xl mx-auto text-gray-400">
+          Lab002 is reimagining how creators share ideas. This site template replicates its aesthetic and vibe, using modern tools and smooth animations to bring your own vision to life.
+        </p>
       </section>
 
       {/* Contact Section */}
